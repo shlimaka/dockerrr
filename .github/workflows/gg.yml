@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-lates
     steps:
-       - run: sudo apt install nginx -y
+#       - run: sudo apt install nginx -y
        - run: ls ./	
 #       - run: sudo cp ./nginx.conf /usr/share/nginx/
 #       - run: sudo nginx -t -c nginx.conf

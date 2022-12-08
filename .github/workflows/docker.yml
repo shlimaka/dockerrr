@@ -29,9 +29,3 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/clockbox:latest
-       - 
-	 name: hyu
-	 run: sudo apt install nginx -y
-       - 
-	 name: pizda
-	 run: ls ./

@@ -13,7 +13,8 @@ jobs:
     env:
        working-directory: ./dir
     steps:
-      - name: List files in the repository
+      -
+	name: List files in the repository
         run: ls -R ./dir
 #       - run: sudo apt install nginx -y
 #       - run: ls ./	

@@ -12,4 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
        - run: sudo apt install nginx -y
-       - run: sudo nginx -t -c $PWD/nginx.conf
+       - run: sudo cp nginx.conf /usr/share/nginx/
+       - run: sudo nginx -t -c nginx.conf

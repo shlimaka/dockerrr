@@ -10,11 +10,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-20.04
-    env:
-       working-directory: ./dir
+#    env:
+#       working-directory: ./dir
     steps:
  
-       - run: pwd
+       - run: ls /home/runner/work/dockerrr/dockerrr
+
 #       - run: sudo apt install nginx -y
 #       - run: ls ./	
 #       - run: sudo cp ./nginx.conf /usr/share/nginx/

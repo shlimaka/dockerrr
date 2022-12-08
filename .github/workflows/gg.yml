@@ -11,7 +11,10 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
 #       - run: sudo apt install nginx -y
-       - run: ls ./	
+#       - run: ls ./	
 #       - run: sudo cp ./nginx.conf /usr/share/nginx/
 #       - run: sudo nginx -t -c nginx.conf

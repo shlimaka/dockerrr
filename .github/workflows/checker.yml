@@ -8,7 +8,7 @@ on:
       - v1.*
 
 jobs:
-  Check nginx config:
+  Check-nginx-config:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code

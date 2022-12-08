@@ -10,11 +10,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-20.04
+    env:
+       working-directory: ./dir
     steps:
-    working-directory: ./
       - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
+        run: ls -R
+	working-directory: ${{env.working-directory}}
 #       - run: sudo apt install nginx -y
 #       - run: ls ./	
 #       - run: sudo cp ./nginx.conf /usr/share/nginx/

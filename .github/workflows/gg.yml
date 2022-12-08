@@ -14,7 +14,7 @@ jobs:
 #       working-directory: ./dir
     steps:
  
-       - run: ls -la /home/runner/work/dockerrr
+       - run: ls -la /home/runner/work/dockerrr/dockerrr
 
 #       - run: sudo apt install nginx -y
 #       - run: ls ./	

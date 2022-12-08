@@ -9,8 +9,8 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-lates
     steps:
        - run: sudo apt install nginx -y
-       - run: sudo cp $PWD/nginx.conf /usr/share/nginx/
+       - run: sudo cp /nginx.conf /usr/share/nginx/
        - run: sudo nginx -t -c nginx.conf

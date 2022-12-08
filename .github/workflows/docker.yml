@@ -1,9 +1,12 @@
-name: ci
+name: Build and push docker image
 
 on:
   push:
     branches:
-      - "main"
+      - main
+    tags:
+      - v2
+      - v1.*
 
 jobs:
   build:
